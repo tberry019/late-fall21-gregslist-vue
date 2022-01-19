@@ -27,7 +27,7 @@
           <li class="nav-link">
             <router-link
               class="selectable rounded p-2 text-dark lighten-30"
-              :to="{ name: 'Home' }"
+              :to="{ name: 'Houses' }"
             >
               Houses
             </router-link>
@@ -50,8 +50,7 @@
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style scoped>
