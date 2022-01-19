@@ -1,22 +1,12 @@
 <template>
-  <header>
-    <Navbar />
-  </header>
   <main class="container-fluid">
     <div class="row">
-      <div class="col-3">
-        <Sidebar />
-      </div>
-      <div class="col-9">
+      <Sidebar class="col-md-2" />
+      <div class="col-md-10 viewport">
         <router-view />
       </div>
     </div>
   </main>
-  <footer>
-    <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
-    </div>
-  </footer>
 </template>
 
 <script>
@@ -33,4 +23,11 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+.sidebar {
+  height: 100vh;
+}
+.viewport {
+  height: 100vh;
+  overflow-y: auto;
+}
 </style>
